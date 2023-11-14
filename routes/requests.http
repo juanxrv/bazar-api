@@ -1,0 +1,47 @@
+### Get productos
+GET http://localhost:8000/api/items?search=wenas wenas 3 HTTP/1.1
+Accept: application/json
+
+### Post producto
+POST http://localhost:8000/api/item HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "nombre": "Árbol de Navidad Jardimex Nevado Escarchado Frondoso",
+  "descripcion": "El pino artificial cuenta con una base de metal y ramas de alambre con una terminación tipo escarcha que proporcionan durabilidad y una apariencia sumamente natural.",
+  "precio": 1800,
+  "stock": 10,
+  "categoria": "decoración",
+  "puntuacion": 5,
+  "miniatura": "https://ss322.liverpool.com.mx/xl/1110946101.jpg",
+  "imagenes": [
+    "https://ss322.liverpool.com.mx/xl/1110946101.jpg",
+    "https://ss322.liverpool.com.mx/xl/1110946101_1p.jpg",
+    "https://ss322.liverpool.com.mx/xl/1110946101_2p.jpg"
+  ]
+}
+
+### Get producto
+GET http://localhost:8000/api/item/6 HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+### Put producto
+PUT http://localhost:8000/api/item/6 HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "nombre": "wenas wenas 3",
+  "descripcion": "ola asies 3",
+  "precio": 1000,
+  "stock": 100,
+  "categoria": "calzado",
+  "puntuacion": 3,
+  "miniatura": "https://ss632.liverpool.com.mx/xl/1142559907.jpg",
+  "imagenes": [
+    "https://ss632.liverpool.com.mx/xl/1142559907.jpg",
+    "https://ss632.liverpool.com.mx/xl/1142559907.jpg"
+  ]
+}
